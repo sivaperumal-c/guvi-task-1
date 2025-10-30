@@ -6,14 +6,14 @@ public class GuviTaskFive {
         System.out.println("Enter the purchase amount:");
         int amount= test.nextInt();
 
-        if (amount==500 || amount==1000 ){
+        if (amount>=500 && amount<=1000 ){
 
             int discount = (amount * 10) / 100; // Calculate 10% discount
             int discountedAmount = amount - discount;
             System.out.println("With Discount amount Pay :"+discountedAmount);
             System.out.println("Discount amount:"+discount);
 
-        } else if (amount>=1001) {
+        } else if (amount>1000) {
 
             int discountabove = (amount * 20) / 100; // Calculate 10% discount
             int discountedAmountnew = amount - discountabove;
